@@ -164,4 +164,273 @@
       <div class="wrap">
         <div class="hero-text">
           <span class="badge">Aplikace pro vysokoškoláky</span>
-          <h1>Jíš
+          <h1>Jíš draze a nezdravě? <span>Změň to.</span></h1>
+          <p class="lead">Jídelníček pro studenty, který šetří čas i peníze. HungryStudent ti na pár kliknutí sestaví plán vaření přesně podle toho, kolik máš v peněžence a času.</p>
+          <div class="hero-ctas">
+            <button onclick="openModal('downloadModal')" class="btn" data-cta="hero">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg>
+              Stáhnout HungryStudent
+            </button>
+            <a onclick="showView('home'); scrollToSection('funkce');" class="link-plain">Jak to funguje</a>
+          </div>
+          <p class="small">Pro iOS i Android. <a onclick="openModal('downloadModal')" style="cursor:pointer;font-weight:700;text-decoration:underline">Získat aplikaci</a></p>
+        </div>
+
+        <div class="hero-visual" aria-label="Ukázka aplikace HungryStudent">
+          <div class="blob"></div>
+          <div class="phone">
+            <div class="screen">
+              <div>
+                <div class="small" style="font-size:12px">Tvůj plán na týden</div>
+                <div style="font-family:var(--display);font-weight:800;font-size:20px">Ahoj, studente!</div>
+              </div>
+              <div class="budget">
+                <div style="font-size:12px">Rozpočet na týden</div>
+                <div class="amount">850 Kč</div>
+                <div class="bar"><i></i></div>
+                <div style="font-size:12px;margin-top:8px">Čas na vaření: do 30 min</div>
+              </div>
+              <b style="font-size:14px">Dnešní menu</b>
+              <div class="meal"><div class="meal-ico" style="background:var(--tint)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16a8 8 0 0 1-16 0z"/><path d="M8 7h8"/></svg></div><div><b>Snídaně: ovesná kaše</b><small>10 min, 18 Kč / porce</small></div></div>
+              <div class="meal"><div class="meal-ico" style="background:#E8F5EC"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c8 0 14-6 14-14-8 0-14 6-14 14z"/><path d="M5 19l7-7"/></svg></div><div><b>Oběd: těstoviny se zeleninou</b><small>20 min, 35 Kč / porce</small></div></div>
+              <div class="meal"><div class="meal-ico" style="background:var(--bg)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1C1917" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.5 11h-11z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></div><div><b>Nákupní seznam</b><small>12 položek k odškrtnutí</small></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAK TO FUNGUJE -->
+    <section id="funkce" class="block white">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">Klíčové funkce</span>
+          <h2>Jak to funguje</h2>
+          <p style="color:var(--muted)">Kliknutím na jednotlivé funkce si můžeš zobrazit podrobný detail.</p>
+        </div>
+        <div class="features">
+          <article class="feature" onclick="showDetail('budget')">
+            <span class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 11c0-3.9-3.1-6-7-6-1.6 0-3 .3-4.2 1L6 4.5V8c-1 .9-1.6 2-1.8 3H3v3h1.5c.5 1.3 1.4 2.3 2.5 3v3h3v-2h4v2h3v-3.2c1.2-.9 2-2.3 2-3.8z"/><circle cx="15" cy="10" r=".6"/><path d="M10 7.5h3"/></svg></span>
+            <h3>Budget-Based Menu</h3>
+            <p>Zadej částku na týden a my najdeme recepty, které se do ní vejdou. Sdílíme suroviny, abys nic nevyhazoval.</p>
+            <span style="font-weight:700;color:var(--accent);margin-top:auto">Zjistit více →</span>
+          </article>
+          <article class="feature" onclick="showDetail('cas')">
+            <span class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V10"/><path d="M10 2.5h4"/><path d="M12 2.5V6"/><path d="M18.5 6.5l1.5-1.5"/></svg></span>
+            <h3>Časový filtr</h3>
+            <p>Máš jen 15 minut před zkouškou? Najdeme ti bleskovou svačinu.</p>
+            <span style="font-weight:700;color:var(--accent);margin-top:auto">Zjistit více →</span>
+          </article>
+          <article class="feature" onclick="showDetail('nakup')">
+            <span class="ico"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2.5l2.2 11h10.6L20.5 7H7"/><circle cx="9" cy="19.5" r="1.4"/><circle cx="17" cy="19.5" r="1.4"/><path d="M10.5 11l1.8 1.8 3.2-3.3"/></svg></span>
+            <h3>Chytrý nákupní seznam</h3>
+            <p>Vygenerujeme přesný seznam na nákup, který si můžeš v obchodě rovnou odškrtávat.</p>
+            <span style="font-weight:700;color:var(--accent);margin-top:auto">Zjistit více →</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="rozpocet" class="block">
+      <div class="wrap">
+        <div class="banner">
+          <div class="banner-text">
+            <span class="kicker" style="color:#FDBA74">Proč jsme jiní</span>
+            <h2>Rozpočet na <span>prvním místě.</span></h2>
+            <p>Zapomeň na počítání každé kalorie nebo tisíce nepřehledných receptů. HungryStudent je tu od toho, aby zachránil tvou peněženku. Cena za porci je naše hlavní metrika. Neřešíme diety, řešíme studentský život.</p>
+          </div>
+          <ul class="checklist">
+            <li><s>Počítání kalorií</s><span class="sr">ne</span></li>
+            <li><s>Tisíce receptů bez ladu</s><span>ne</span></li>
+            <li><s>Diety</s><span>ne</span></li>
+            <li class="yes">Cena za porci <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-label="ano"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="block white">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="kicker">Blog</span>
+          <h2>Tipy pro studentskou kuchyni</h2>
+        </div>
+        <div class="posts">
+          <article class="post" onclick="showBlogPost('blog1')">
+            <h3>Jak uvařit na 5 dní za 500 Kč a nejíst jen čínské polévky</h3>
+            <p>Praktický rozpis základních surovin ze supermarketu, ze kterých snadno nakombinuješ pět plnohodnotných teplých jídel.</p>
+            <span>Číst článek →</span>
+          </article>
+          <article class="post" onclick="showBlogPost('blog2')">
+            <h3>5 obědů do krabičky do 20 minut, které přežijí celý den v batohu</h3>
+            <p>Rychlé a levné recepty mezi přednášky, u kterých nemusíš čekat ve frontě na mikrovlnku na fakultě.</p>
+            <span>Číst článek →</span>
+          </article>
+          <article class="post" onclick="showBlogPost('blog3')">
+            <h3>Nákupní lístek prváka: Základní suroviny, které se nezkazí</h3>
+            <p>Co mít vždycky v zásobě na koleji nebo privátu, abys ve zkouškovém nemusel utrácet stovky korun za drahé donášky.</p>
+            <span>Číst článek →</span>
+          </article>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="newsletter-box">
+          <div>
+            <h3>Nenech si ujít další tipy na levné vaření</h3>
+            <p style="color:var(--muted);margin-top:8px">Každý týden pošleme 3 ověřené studentské recepty přímo do tvého e-mailu.</p>
+          </div>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Díky za přihlášení k odběru newsletteru!');">
+            <input type="email" placeholder="Tvůj e-mail (např. student@vut.cz)" required>
+            <button type="submit" class="btn" style="min-height:56px;padding-inline:24px">Odebírat</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- PODSTRÁNKA DETAILU -->
+<div id="view-detail" class="view">
+  <div class="subpage">
+    <div class="wrap">
+      <div class="back-link" onclick="showView('home')">← Zpět na hlavní stránku</div>
+      <div class="subpage-content" id="detail-content"></div>
+    </div>
+  </div>
+</div>
+
+<!-- PODSTRÁNKA BLOGU -->
+<div id="view-blog" class="view">
+  <div class="subpage">
+    <div class="wrap">
+      <div class="back-link" onclick="showView('home'); scrollToSection('blog');">← Zpět na přehled článků</div>
+      <div class="subpage-content" id="blog-content"></div>
+    </div>
+  </div>
+</div>
+
+<!-- PATIČKA -->
+<footer>
+  <div class="wrap">
+    <div class="footer-cta">
+      <h2>Lednice s kečupem už ne. Začni plánovat chytře.</h2>
+      <button onclick="openModal('registerModal')" class="btn" data-cta="footer">Chci začít šetřit na jídle
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+    <div class="footer-bottom">
+      <div>
+        <strong>HungryStudent</strong>
+        <span class="small">Projekt do předmětu Digitální marketing. Vytvořil tým: Adéla &amp; tým HungryStudent.</span>
+      </div>
+      <nav class="socials" aria-label="Sociální sítě a kontakt">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" data-cta="instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg>Instagram</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener" data-cta="tiktok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.5 2.5 2.5 4.5 5 4.8"/></svg>TikTok</a>
+        <a href="mailto:info@hungrystudent.cz" data-cta="kontakt"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5L12 13l8.5-6.5"/></svg>Kontakt</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- MODÁLNÍ OKNO: STAŽENÍ -->
+<div id="downloadModal" class="modal-overlay" onclick="if(event.target === this) closeModal('downloadModal')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('downloadModal')">✕</button>
+    <h3>Stáhnout HungryStudent</h3>
+    <p style="color:var(--muted)">Vyber si svou platformu a získej jídelníček na míru do kapsy.</p>
+    <div style="display:flex;flex-direction:column;gap:12px;margin-top:10px">
+      <a href="https://www.apple.com/app-store/" target="_blank" class="btn" style="justify-content:center;background:var(--ink)">Stáhnout v App Store (iOS)</a>
+      <a href="https://play.google.com/" target="_blank" class="btn" style="justify-content:center">Stáhnout na Google Play (Android)</a>
+    </div>
+  </div>
+</div>
+
+<!-- MODÁLNÍ OKNO: REGISTRACE -->
+<div id="registerModal" class="modal-overlay" onclick="if(event.target === this) closeModal('registerModal')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('registerModal')">✕</button>
+    <h3>Vytvořit studentský účet zdarma</h3>
+    <p style="color:var(--muted)">Zadej svůj e-mail a nastav si první týdenní rozpočet na jídlo.</p>
+    <form onsubmit="event.preventDefault(); alert('Registrace byla úspěšná! Vítej v HungryStudent.'); closeModal('registerModal');" style="display:flex;flex-direction:column;gap:16px;margin-top:10px">
+      <input type="email" placeholder="Tvůj studentský e-mail" required style="min-height:50px;padding:0 16px;border-radius:14px;border:1px solid var(--line);font-size:15px">
+      <input type="password" placeholder="Zvol si heslo" required style="min-height:50px;padding:0 16px;border-radius:14px;border:1px solid var(--line);font-size:15px">
+      <button type="submit" class="btn" style="justify-content:center">Dokončit registraci</button>
+    </form>
+  </div>
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+  function showView(viewId) {
+    document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+    document.getElementById('view-' + viewId).classList.add('active');
+    window.scrollTo(0, 0);
+  }
+
+  function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  function showDetail(type) {
+    const content = {
+      'budget': `
+        <h2>Budget-Based Menu: Jak to funguje pod kapotou?</h2>
+        <p>Algoritmus HungryStudent analyzuje tvou zadanou týdenní částku a aktuální akční letáky supermarketů. Na základě toho ti sestaví jídelníček tak, aby se suroviny chytře doplňovaly – například uvařené kuřecí maso z pondělního oběda využiješ jako základ úterní pomazánky.</p>
+        <p><strong>Hlavní výhoda:</strong> Žádné vyhazování peněz ani zkaženého jídla z lednice. Každá koruna je investovaná efektivně.</p>
+      `,
+      'cas': `
+        <h2>Časový filtr: Jídlo do 15 minut mezi přednáškami</h2>
+        <p>Víme, že život vysokoškoláka není jen o vaření. Když máš mezi semináři pouhou čtvrt hodinu, aplikace ti nabídne bleskové recepty z one-pot surovin nebo studené varianty, které zvládneš připravit na koleji bez složitého nádobí.</p>
+      `,
+      'nakup': `
+        <h2>Chytrý nákupní seznam: Konec bloudění v supermarketu</h2>
+        <p>Po potvrzení týdenního menu se automaticky vygeneruje nákupní seznam seřazený podle oddělení v obchodě (pečivo, zelenina, trvanlivé). Položky si v obchodě můžeš jednoduše odškrtávat jedním prstem.</p>
+      `
+    };
+    document.getElementById('detail-content').innerHTML = content[type];
+    showView('detail');
+  }
+
+  function showBlogPost(postId) {
+    const posts = {
+      'blog1': `
+        <h2>Jak uvařit na 5 dní za 500 Kč a nejíst jen čínské polévky</h2>
+        <p><em>Publikováno v rubrice Studentská kuchyně • Čtení na 4 minuty</em></p>
+        <p>Inflace v obchodech doléhá na každého studenta, ale jíst každý den instantní nudle není udržitelné pro tvoje zdraví ani peněženku. Základem úspěchu je nákup univerzálních surovin: luštěniny, těstoviny, kořenová zelenina, vejce a mražená směs.</p>
+        <p>Když si v neděli nakoupíš podle našeho seznamu za pět set korun, máš vystaráno na celý pracovní týden. V aplikaci HungryStudent ti tento plán vygenerujeme jedním kliknutím.</p>
+      `,
+      'blog2': `
+        <h2>5 obědů do krabičky do 20 minut, které přežijí celý den v batohu</h2>
+        <p><em>Publikováno v rubrice Recepty • Čtení na 3 minuty</em></p>
+        <p>Tahat s sebou jídlo na celodenní rozvrh do školy bývá výzva. Tyto recepty jsou stavěné tak, aby chutnaly skvěle i za studena nebo po rychlém ohřátí v univerzitní mikrovlnce.</p>
+        <p>1. Těstovinový salát s tuňákem a kukuřicí<br>2. Tortilla plněná fazolemi a sýrem<br>3. Rýžový salát s grilovanou zeleninou</p>
+      `,
+      'blog3': `
+        <h2>Nákupní lístek prváka: Základní suroviny, které se nezkazí</h2>
+        <p><em>Publikováno v rubrice Tipy pro koleje • Čtení na 5 minut</em></p>
+        <p>Pokud se stěhuješ poprvé na kolej nebo privát, tvoje lednice ze začátku zejí prázdnotou. Vyvaruj se spontánním nákupům drahých polotovarů. Měj v poličce vždy rýži, konzervovaná rajčata, cibuli a základní koření. S touto výbavou nevaříš pod 25 Kč za porci.</p>
+      `
+    };
+    document.getElementById('blog-content').innerHTML = posts[postId];
+    showView('blog');
+  }
+
+  function openModal(id) { document.getElementById(id).classList.add('open'); }
+  function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+
+  // Měření prokliku pro GA4
+  document.querySelectorAll('[data-cta]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'cta_click', { umisteni: el.dataset.cta, text: el.textContent.trim() });
+      }
+    });
+  });
+</script>
+</body>
+</html>
