@@ -7,7 +7,7 @@
 <meta name="description" content="Jídelníček pro studenty, který šetří čas i peníze. HungryStudent ti sestaví plán vaření podle toho, kolik máš v peněžence a času.">
 
 <!-- ===== Google Analytics 4 =====
-     Nahraď G-XXXXXXXXXX svým Measurement ID (GA4 > Správce > Datové toky > Web). -->
+     ZDE PŘEPIŠ G-XXXXXXXXXX NA SVOJE ID MĚŘENÍ NA OBOU ŘÁDCÍCH NÍŽE -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -17,8 +17,8 @@
 </script>
 
 <!-- ===== Microsoft Clarity =====
-     Nahraď CLARITY_ID svým Project ID (clarity.microsoft.com > Settings > Setup). -->
-<script>
+     ZDE PŘEPIŠ CLARITY_ID NA SVOJE PROJECT ID Z CLARITY -->
+<script type="text/javascript">
   (function(c,l,a,r,i,t,y){
     c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
     t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -73,6 +73,7 @@
   .hero-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:16px}
   .link-plain{color:var(--ink);font-weight:700;text-decoration:none;padding:12px 8px}
   .small{font-size:14px;color:var(--muted)}
+  .small a{font-weight:700;text-decoration:underline}
 
   .hero-visual{flex:1 1 380px;min-width:0;display:flex;justify-content:center;position:relative;padding:24px 0}
   .blob{position:absolute;width:420px;max-width:100%;aspect-ratio:1;border-radius:50%;background:var(--tint);top:50%;left:50%;transform:translate(-50%,-50%)}
@@ -163,7 +164,7 @@
           </a>
           <a href="#funkce" class="link-plain">Jak to funguje</a>
         </div>
-        <p class="small">Pro iOS i Android. [ODKAZ DO APP STORE / GOOGLE PLAY]</p>
+        <p class="small">Pro iOS i Android. Stahuj v <a href="#stahnout" data-cta="app-store">App Store</a> nebo na <a href="#stahnout" data-cta="google-play">Google Play</a>.</p>
       </div>
 
       <div class="hero-visual" aria-label="Ukázka aplikace HungryStudent">
@@ -176,14 +177,14 @@
             </div>
             <div class="budget">
               <div style="font-size:12px">Rozpočet na týden</div>
-              <div class="amount">[ČÁSTKA] Kč</div>
+              <div class="amount">850 Kč</div>
               <div class="bar"><i></i></div>
               <div style="font-size:12px;margin-top:8px">Čas na vaření: do 30 min</div>
             </div>
             <b style="font-size:14px">Dnešní menu</b>
-            <div class="meal"><div class="meal-ico" style="background:var(--tint)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16a8 8 0 0 1-16 0z"/><path d="M8 7h8"/></svg></div><div><b>Snídaně: ovesná kaše</b><small>10 min, [CENA] Kč / porce</small></div></div>
-            <div class="meal"><div class="meal-ico" style="background:#E8F5EC"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c8 0 14-6 14-14-8 0-14 6-14 14z"/><path d="M5 19l7-7"/></svg></div><div><b>Oběd: těstoviny se zeleninou</b><small>20 min, [CENA] Kč / porce</small></div></div>
-            <div class="meal"><div class="meal-ico" style="background:var(--bg)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1C1917" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.5 11h-11z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></div><div><b>Nákupní seznam</b><small>[POČET] položek k odškrtnutí</small></div></div>
+            <div class="meal"><div class="meal-ico" style="background:var(--tint)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C2410C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16a8 8 0 0 1-16 0z"/><path d="M8 7h8"/></svg></div><div><b>Snídaně: ovesná kaše</b><small>10 min, 18 Kč / porce</small></div></div>
+            <div class="meal"><div class="meal-ico" style="background:#E8F5EC"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c8 0 14-6 14-14-8 0-14 6-14 14z"/><path d="M5 19l7-7"/></svg></div><div><b>Oběd: těstoviny se zeleninou</b><small>20 min, 35 Kč / porce</small></div></div>
+            <div class="meal"><div class="meal-ico" style="background:var(--bg)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1C1917" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.5 11h-11z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></div><div><b>Nákupní seznam</b><small>12 položek k odškrtnutí</small></div></div>
           </div>
         </div>
       </div>
@@ -254,7 +255,7 @@
     </div>
   </section>
 
-  <!-- BLOG: každý článek ideálně jako samostatná stránka (blog/nazev-clanku.html), ať má v GA4 vlastní page_view. -->
+  <!-- BLOG -->
   <section id="blog" class="block white">
     <div class="wrap">
       <div class="section-head">
@@ -262,20 +263,20 @@
         <h2>Tipy pro studentskou kuchyni</h2>
       </div>
       <div class="posts">
-        <a class="post" href="#" data-cta="blog-1">
-          <h3>[NÁZEV ČLÁNKU 1]</h3>
-          <p>[Krátký perex článku, 1–2 věty.]</p>
-          <span>Číst článek</span>
+        <a class="post" href="#blog" data-cta="blog-1">
+          <h3>Jak uvařit na 5 dní za 500 Kč a nejíst jen čínské polévky</h3>
+          <p>Praktický rozpis základních surovin ze supermarketu, ze kterých snadno nakombinuješ pět plnohodnotných teplých jídel.</p>
+          <span>Číst článek →</span>
         </a>
-        <a class="post" href="#" data-cta="blog-2">
-          <h3>[NÁZEV ČLÁNKU 2]</h3>
-          <p>[Krátký perex článku, 1–2 věty.]</p>
-          <span>Číst článek</span>
+        <a class="post" href="#blog" data-cta="blog-2">
+          <h3>5 obědů do krabičky do 20 minut, které přežijí celý den v batohu</h3>
+          <p>Rychlé a levné recepty mezi přednášky, u kterých nemusíš čekat ve frontě na mikrovlnku na fakultě.</p>
+          <span>Číst článek →</span>
         </a>
-        <a class="post" href="#" data-cta="blog-3">
-          <h3>[NÁZEV ČLÁNKU 3]</h3>
-          <p>[Krátký perex článku, 1–2 věty.]</p>
-          <span>Číst článek</span>
+        <a class="post" href="#blog" data-cta="blog-3">
+          <h3>Nákupní lístek prváka: Základní suroviny, které se nezkazí</h3>
+          <p>Co mít vždycky v zásobě na koleji nebo privátu, abys ve zkouškovém nemusel utrácet stovky korun za drahé donášky.</p>
+          <span>Číst článek →</span>
         </a>
       </div>
     </div>
@@ -293,12 +294,12 @@
     <div class="footer-bottom">
       <div>
         <strong>HungryStudent</strong>
-        <span class="small">Projekt do předmětu Digitální marketing. Vytvořil tým: [Doplňte jména].</span>
+        <span class="small">Projekt do předmětu Digitální marketing. Vytvořil tým: Adéla &amp; tým HungryStudent.</span>
       </div>
       <nav class="socials" aria-label="Sociální sítě a kontakt">
-        <a href="#" data-cta="instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg>Instagram</a>
-        <a href="#" data-cta="tiktok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.5 2.5 2.5 4.5 5 4.8"/></svg>TikTok</a>
-        <a href="mailto:[EMAIL]" data-cta="kontakt"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5L12 13l8.5-6.5"/></svg>Kontakt</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" data-cta="instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg>Instagram</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener" data-cta="tiktok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.5 2.5 2.5 4.5 5 4.8"/></svg>TikTok</a>
+        <a href="mailto:info@hungrystudent.cz" data-cta="kontakt"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5L12 13l8.5-6.5"/></svg>Kontakt</a>
       </nav>
     </div>
   </div>
